@@ -18,6 +18,13 @@ jobs:
   Template:
     runs-on: ubuntu-latest
     steps:
+      # Check-out repo under $GITHUB_WORKSPACE
+      - uses: actions/checkout@v3
+        name: Checkout
+
+      - name: Show $GITHUB_WORKSPACE
+        run: echo $GITHUB_WORKSPACE
+
       - name: Render heml chart
         run: |
           pwd
