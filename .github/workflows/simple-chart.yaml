@@ -21,4 +21,5 @@ jobs:
       - name: Render heml chart
         run: |
           pwd
+          ls
           helm template ./simple-chart
