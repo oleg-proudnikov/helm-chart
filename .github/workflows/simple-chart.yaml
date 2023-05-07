@@ -24,7 +24,7 @@ jobs:
       - name: Render list
         run: helm template simple-chart -s templates/list.yaml
 
-  render-env-var-json:
+  render-json-value:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
