@@ -19,4 +19,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Render heml chart
-        run: helm template ./simple-chart
+        run: |
+          pwd
+          helm template ./simple-chart
