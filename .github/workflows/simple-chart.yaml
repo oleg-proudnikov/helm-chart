@@ -34,4 +34,5 @@ jobs:
     needs: checkout
     steps:
       - name: Render JSON from environment varriable
-        run: helm template simple-chart -s templates/env.yaml --set env.solution_4='"ernie": "123"'
+        run: |
+          helm template simple-chart -s templates/env.yaml --set env.solution_4='"ernie": "123"'
