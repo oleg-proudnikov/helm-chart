@@ -15,7 +15,7 @@ on:
 
 jobs:
 
-  Render List:
+  RenderList:
     runs-on: ubuntu-latest
     steps:
       # Check-out repo under $GITHUB_WORKSPACE
