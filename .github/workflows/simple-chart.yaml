@@ -1,0 +1,22 @@
+# 
+# Render Helm Cahrt
+#
+
+name: simple-chat render
+
+on:
+  push:
+    branches: 
+      - '**'
+    paths:
+      - simple-chart/**
+      - .github/workflows/simple-chart*
+  workflow_dispatch:
+
+jobs:
+
+  Template:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Render heml chart
+        run: helm template simple-chart
