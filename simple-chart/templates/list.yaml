@@ -1,0 +1,7 @@
+kind: List
+spec:
+  len: {{ len .Values.list }}
+  items:
+    {{- range $item := .Values.list }}
+  - {{ $item }}
+    {{- end }}
