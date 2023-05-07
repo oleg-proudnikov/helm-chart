@@ -23,4 +23,4 @@ jobs:
         name: Checkout
 
       - name: Render list
-        run: helm template simple-chart -s list.yaml
+        run: helm template simple-chart -s templates/list.yaml
