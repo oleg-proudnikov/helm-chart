@@ -22,14 +22,5 @@ jobs:
       - uses: actions/checkout@v3
         name: Checkout
 
-      - name: Show $GITHUB_WORKSPACE
-        run: echo $GITHUB_WORKSPACE
-
       - name: Render heml chart
-        run: |
-          pwd
-          echo "--- ls"
-          ls
-          echo "--- ls .."
-          ls ..
-          helm template ./simple-chart
+        run: helm template simple-chart
