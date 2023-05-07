@@ -7,6 +7,14 @@ list:
   - b
   - c
 
+AuthConfValue: '{ "ernie": "123" }'
+
+env:
+  solution_1: '{ "ernie": "123" }'
+  solution_2: '"ernie": "123"'
+  solution_3:
+    ernie: "123"
+
 replicaCount: 1
 
 image:
