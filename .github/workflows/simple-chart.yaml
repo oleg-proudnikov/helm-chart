@@ -33,7 +33,7 @@ jobs:
         run: |
           helm template simple-chart -s templates/env.yaml --set env.solution_4='"ernie": "123"'
 
-§§  render-pod-with-shell-multiline-command:
+  render-pod-with-shell-multiline-command:
     runs-on: ubuntu-latest
     description: See https://yaml-multiline.info/
     steps:
