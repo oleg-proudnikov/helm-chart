@@ -35,10 +35,9 @@ jobs:
 
   render-pod-with-shell-multiline-command:
     runs-on: ubuntu-latest
-    description: See https://yaml-multiline.info/
     steps:
       - uses: actions/checkout@v3
 
-      - name: Render sh -c commands
+      - name: Render sh -c commands (See https://yaml-multiline.info/)
         run: |
           helm template simple-chart -s templates/pod.yaml
