@@ -15,7 +15,7 @@ spec:
       command:
         - sh
         - -c
-        - "{{ .Values.commandFoldedBlock }}"
+        - {{ .Values.commandFoldedBlock | quote }}
     - name: bash3
       image: bash:4.4
       command: {{ toYaml .Values.commandList | nindent 8 }}
