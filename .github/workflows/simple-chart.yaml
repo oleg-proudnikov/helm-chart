@@ -32,3 +32,12 @@ jobs:
       - name: Render JSON from environment varriable
         run: |
           helm template simple-chart -s templates/env.yaml --set env.solution_4='"ernie": "123"'
+
+  render-pod-with-shell-command:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Render sh -c commands
+        run: |
+          helm template simple-chart -s templates/pod.yaml

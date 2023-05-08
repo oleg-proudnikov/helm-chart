@@ -15,6 +15,34 @@ env:
   solution_3:
     ernie: "123"
 
+commandBlock: |-
+  echo Files in $(pwd)
+  ls
+
+commandFoldedBlock: >-
+  echo Again;
+  ls
+
+commandList:
+  - sh
+  - -c
+  - |-
+    echo Files in $(pwd)
+    ls
+
+commandListWithFoldedBlock:
+  - sh
+  - -c
+  - >-
+    echo Files in $(pwd);
+    ls
+
+argsList:
+  - |-
+    echo Files in $(pwd)
+    ls
+
+
 replicaCount: 1
 
 image:
